@@ -1,0 +1,356 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #2a7ae4;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+.icono-header {
+  margin: 0.5rem;
+}
+.h3-header {
+  display: none;
+}
+.navegador {
+  display: none;
+}
+.titulo-header {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+.btn-Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnMenu {
+  width: 4rem;
+  margin-right: 1rem;
+}
+#btn-menu {
+  display: none;
+}
+.contenedor-menu {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0, 5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .contenedor-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  background-color: rgb(32 33 36);
+  opacity: 90%;
+  height: 100vh;
+  position: fixed;
+  transition: all 500ms ease;
+  transform: translateX(0%);
+}
+#btn-menu:checked ~ .cont-menu {
+  transform: translateX(-100%);
+}
+.cont-menu nav {
+  transform: translateY(15%);
+}
+.cont-menu nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+  color: white;
+  text-decoration: none;
+}
+.cont-menu nav a:hover {
+  border-left: 5px solid rgb(3 105 161);
+  background-color: rgb(30 31 34);
+}
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #bb8fce;
+  cursor: pointer;
+  font-size: 18px;
+}
+.botonX {
+  width: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  margin: 0.5rem;
+}
+.titulo {
+  margin-top: 5rem;
+  padding: 1rem;
+}
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-perfil {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.texto-inicio {
+  text-align: left;
+}
+.icono-redes {
+  width: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.label-contenedor a {
+  display: flex;
+  text-decoration: none;
+  color: #2a7ae4;
+  cursor: pointer;
+}
+.label-contenedor img {
+  margin-left: 0.3rem;
+  width: 20px;
+  height: auto;
+}
+
+.sobre-mi {
+  background-color: #ecf4fc;
+  padding: 1rem;
+}
+
+.skill-hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.prop {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prop h6 {
+  margin: 0;
+  padding: 0.5rem;
+}
+.prop img {
+  width: 40px;
+  height: auto;
+}
+
+.hobbies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.formacion {
+  background-color: #ecf4fc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.formacion img {
+  width: 100px;
+  height: auto;
+}
+.formacion-contenedor {
+  width: 80%;
+  height: 4rem;
+  background-color: white;
+  border-radius: 1px;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fecha-formacion {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  margin: none;
+}
+.formacion-info {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+}
+.formacion-info p,
+h6 {
+  margin: 5px;
+}
+.formacion-info h6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.formacion-info p {
+  font-size: 10px;
+}
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.proyectos img {
+  width: 100%;
+  height: auto;
+}
+.proyectos p,
+h6 {
+  margin: 5px;
+}
+.proyectos h6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.proyectos p {
+  font-size: 10px;
+}
+.proyectos-contenedor-letras {
+  margin-bottom: 1rem;
+}
+.proyectos a {
+  width: 30%;
+  height: 35px;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-proyectos-repositorio {
+  border-style: solid;
+  border-color: #2a7ae4;
+  background-color: none;
+  color: #2a7ae4;
+}
+.btn-proyectos-repositorio:hover {
+  background-color: #2a7ae4;
+  color: white;
+}
+.btn-proyectos-demo {
+  background-color: #2a7ae4;
+  border-style: solid;
+  border-color: #2a7ae4;
+  color: #ecf4fc;
+}
+.btn-proyectos-demo:hover {
+  background-color: white;
+  border-style: solid;
+  border-color: #2a7ae4;
+  color: #2a7ae4;
+}
+.proyectos-contenedor {
+  margin-top: 3rem;
+}
+.contactos {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf4fc;
+  padding: 0 1rem;
+}
+.contactos h2 {
+  text-align: left;
+}
+.contactos form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 90%;
+  height: auto;
+  padding: 1rem;
+}
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.btn-enviar {
+  display: flex;
+  width: 35%;
+  height: 35px;
+  padding: 0.3rem;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #2a7ae4;
+  border-style: solid;
+  border-color: #2a7ae4;
+  color: #ecf4fc;
+  margin-left: 1rem;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+footer h2 {
+  font-size: 12px;
+  font-weight: normal;
+}
