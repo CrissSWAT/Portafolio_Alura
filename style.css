@@ -1,3 +1,9 @@
+/* *{
+  border: 1px solid red;
+} */
+svg {
+  object-fit: scale-down;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +27,12 @@ header {
 }
 .icono-header {
   margin: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.icono-header img {
+  width: 30px;
+  height: 30px;
 }
 .h3-header {
   display: none;
@@ -28,9 +40,11 @@ header {
 .navegador {
   display: none;
 }
-.titulo-header {
+.titulo-header a {
   margin-left: 1rem;
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 .btn-Menu {
   display: flex;
@@ -102,7 +116,8 @@ header {
   font-size: 18px;
 }
 .botonX {
-  width: 1rem;
+  width: 2.5rem;
+  margin-right: 1rem;
 }
 
 main {
@@ -210,7 +225,7 @@ main {
   height: auto;
 }
 .formacion-contenedor {
-  width: 80%;
+  width: 250px;
   height: 4rem;
   background-color: white;
   border-radius: 1px;
@@ -243,6 +258,15 @@ h6 {
 }
 .formacion-info p {
   font-size: 10px;
+}
+.contenedor-proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-proyectos h3 {
+  padding-top: 1rem;
 }
 .proyectos {
   display: flex;
@@ -310,6 +334,9 @@ h6 {
   background-color: #ecf4fc;
   padding: 0 1rem;
 }
+.imagen-contactos{
+  display: none;
+}
 .contactos h2 {
   text-align: left;
 }
@@ -353,4 +380,96 @@ footer {
 footer h2 {
   font-size: 12px;
   font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  .titulo {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  .prop {
+    width: 30%;
+  }
+  .contenedores-formacion {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+  }
+  .formacion-academica-contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  form textarea{
+    width: 95%;
+    height: auto;
+  }
+  .btn-enviar{
+    width: 16%;
+  }
+  .imagen-contactos{
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 5rem;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .navegador {
+    display: flex;
+  }
+  .navegador a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  .prop {
+    width: 15%;
+  }
+  .proyectos-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .proyecto1-img {
+    width: 550px;
+  }
+  .proyecto-inverso {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  form textarea{
+    width: 100%;
+    height: auto;
+  }
+  .btn-enviar{
+    width: 36%;
+  }
+  .imagen-contactos{
+    display: flex;
+  }
+  .contenedor-contactos{
+    display: flex;
+    flex-direction: row;
+    background-color: #ecf4fc;
+    height: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  form input {
+    width: 89%;
+    border-style: solid;
+  }
+  form textarea{
+    width: 93%;
+    height: auto;
+    border-style: solid;
+  }
+  .btn-enviar{
+    width: 16%;
+  }
 }
