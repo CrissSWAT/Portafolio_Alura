@@ -334,7 +334,7 @@ h6 {
   background-color: #ecf4fc;
   padding: 0 1rem;
 }
-.imagen-contactos{
+.imagen-contactos {
   display: none;
 }
 .contactos h2 {
@@ -400,21 +400,19 @@ footer h2 {
     flex-direction: row;
     gap: 1rem;
   }
-  form textarea{
+  form textarea {
     width: 95%;
     height: auto;
   }
-  .btn-enviar{
+  .btn-enviar {
     width: 16%;
   }
-  .imagen-contactos{
+  .imagen-contactos {
     display: none;
   }
 }
 @media screen and (min-width: 1024px) {
-  main {
-    margin: 5rem;
-  }
+  
   .icon-menu {
     display: none;
   }
@@ -442,17 +440,17 @@ footer h2 {
     display: flex;
     flex-direction: row-reverse;
   }
-  form textarea{
+  form textarea {
     width: 100%;
     height: auto;
   }
-  .btn-enviar{
+  .btn-enviar {
     width: 36%;
   }
-  .imagen-contactos{
+  .imagen-contactos {
     display: flex;
   }
-  .contenedor-contactos{
+  .contenedor-contactos {
     display: flex;
     flex-direction: row;
     background-color: #ecf4fc;
@@ -464,12 +462,12 @@ footer h2 {
     width: 89%;
     border-style: solid;
   }
-  form textarea{
+  form textarea {
     width: 93%;
     height: auto;
     border-style: solid;
   }
-  .btn-enviar{
+  .btn-enviar {
     width: 16%;
   }
 }
