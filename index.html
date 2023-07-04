@@ -86,9 +86,8 @@
 
               <a
                 href="./assets/Cristofer_Gonzalez_CV.pdf"
-                download="Cristofer_Gonzalez_CV.pdf"
                 class="lbl-redes"
-                >Curriculum
+                target="_blank">Curriculum
                 <img
                   class="icono-redes"
                   src="https://cdn-icons-png.flaticon.com/512/3846/3846805.png"
@@ -359,36 +358,44 @@
           </div>
         </section>
         <section class="contenedor-contactos">
-          <img class="imagen-contactos" src="https://cdn-icons-png.flaticon.com/512/5075/5075600.png" alt="imagen">
-        <div class="contactos" id="contactos">
-          <h2>Contacto</h2>
-          <p>
-            ¿Quiere contactarme? Complete el siguiente formulario y me pondre en
-            contacto con usted.
-          </p>
-          <div class="formulario">
-            <form action="#">
-              <div class="contenedor-formulario">
-                <input type="text" class="nombre" placeholder="Nombre" />
+          <img
+            class="imagen-contactos"
+            src="https://cdn-icons-png.flaticon.com/512/5075/5075600.png"
+            alt="imagen"
+          />
+          <div class="contactos" id="contactos">
+            <h2>Contacto</h2>
+            <p>
+              ¿Quiere contactarme? Complete el siguiente formulario y me pondre
+              en contacto con usted.
+            </p>
+            <div class="formulario">
+              <form action="#">
+                <div class="contenedor-formulario">
+                  <input type="text" class="nombre" placeholder="Nombre" />
+                  <input
+                    type="email"
+                    class="email"
+                    placeholder="email@ejemplo.com"
+                  />
+                  <input type="text" class="asunto" placeholder="Asunto" />
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Explique en breves palabras el motivo de su contacto"
+                  ></textarea>
+                </div>
                 <input
-                  type="email"
-                  class="email"
-                  placeholder="email@ejemplo.com"
+                  type="submit"
+                  class="btn-enviar"
+                  value="Enviar mensaje"
                 />
-                <input type="text" class="asunto" placeholder="Asunto" />
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Explique en breves palabras el motivo de su contacto"
-                ></textarea>
-              </div>
-              <input type="submit" class="btn-enviar" value="Enviar mensaje" />
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
     </main>
     <footer>
