@@ -1,405 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Portafolio Alura</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="icono-header">
-        <img src="./assets/vector.png" />
-        <div class="titulo-header">
-          <a href="#">Portafolio Alura</a>
-        </div>
-      </div>
-      <div class="navegador">
-        <a href="#inicio"> Sobre mi </a>
-        <a href="#skill-hobbies"> Skills & hobbies </a>
-        <a href="#proyectos"> Proyectos </a>
-        <a href="#contactos"> Contactos </a>
-      </div>
-      <label for="btn-menu" class="icon-menu"
-        ><img
-          src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png"
-          class="btnMenu"
-        />
-      </label>
-    </header>
-    <input type="checkbox" id="btn-menu" />
-    <div class="contenedor-menu">
-      <div class="cont-menu">
-        <nav>
-          <a href="#inicio" onclick=""> Sobre mi </a>
-          <a href="#skill-hobbies" onclick=""> Skills & hobbies </a>
-          <a href="#proyectos" onclick=""> Proyectos </a>
-          <a href="#contactos" onclick=""> Contactos </a>
-        </nav>
-        <label for="btn-menu"
-          ><img
-            class="botonX"
-            src="https://cdn.icon-icons.com/icons2/624/PNG/96/Delete-80_icon-icons.com_57340.png"
-          />
-        </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Portafolio Alura</title>
+</head>
+
+<body>
+  <header>
+    <div class="icono-header">
+      <img src="./assets/vector.png" />
+      <div class="titulo-header">
+        <a href="#">Portafolio Alura</a>
       </div>
     </div>
+    <div class="navegador">
+      <a href="#inicio"> Sobre mi </a>
+      <a href="#skill-hobbies"> Skills & hobbies </a>
+      <a href="#proyectos"> Proyectos </a>
+      <a href="#contactos"> Contactos </a>
+    </div>
+    <label for="btn-menu" class="icon-menu"><img
+        src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_icon-icons.com_71858.png" class="btnMenu" />
+    </label>
+  </header>
+  <input type="checkbox" id="btn-menu" />
+  <div class="contenedor-menu">
+    <div class="cont-menu">
+      <nav>
+        <a href="#inicio" onclick=""> Sobre mi </a>
+        <a href="#skill-hobbies" onclick=""> Skills & hobbies </a>
+        <a href="#proyectos" onclick=""> Proyectos </a>
+        <a href="#contactos" onclick=""> Contactos </a>
+      </nav>
+      <label for="btn-menu"><img class="botonX"
+          src="https://cdn.icon-icons.com/icons2/624/PNG/96/Delete-80_icon-icons.com_57340.png" />
+      </label>
+    </div>
+  </div>
 
-    <main>
-      <div class="contenedor">
-        <div class="titulo">
-          <div id="inicio">
-            <img class="img-perfil" src="./assets/yo por ia 2.png" />
+  <main>
+    <div class="contenedor">
+      <div class="titulo">
+        <div id="inicio">
+          <img class="img-perfil" src="./assets/yo por ia 2.png" />
+        </div>
+        <div class="texto-inicio">
+          <h2>
+            Hola, mi nombre es Cristofer Gonzalez y este es mi portafolio.
+          </h2>
+          <p>
+            Apasionado por el desarrollo de soluciones de software y la gestión de tecnología, con experiencia en operaciones. Mi deseo de aprendizaje se refleja en mi entusiasmo por compartir conocimientos y enseñar. Busco un rol donde contribuir y aprender, impulsando el desarrollo de software y las tecnologías emergentes.
+          </p>
+          <div class="label-contenedor">
+            <a href="https://github.com/CrissSWAT" class="lbl-redes">Github
+              <img class="icono-redes"
+                src="https://w7.pngwing.com/pngs/490/316/png-transparent-computer-icons-github-github-icon-cat-like-mammal-carnivoran-black.png" /></a>
+            <a href="https://www.linkedin.com/in/cristofer-gonzalez/" class="lbl-redes">Linkedin
+              <img class="icono-redes"
+                src="https://w7.pngwing.com/pngs/555/1002/png-transparent-computer-icons-linkedin-resume-curriculum-vitae-social-media-social-media-template-text-rectangle.png" /></a>
+
+            <a href="./assets/Cristofer_Gonzalez_CV.pdf" class="lbl-redes" target="_blank">Curriculum
+              <img class="icono-redes" src="https://cdn-icons-png.flaticon.com/512/3846/3846805.png" /></a>
           </div>
-          <div class="texto-inicio">
-            <h2>
-              Hola, mi nombre es Cristofer Gonzalez y este es mi portafolio.
-            </h2>
-            <p>
-              Capacitado en desarrollo de soluciones de software, operaciones y
-              gestión de tecnologías de la información, interesado en un puesto
-              en el cual pueda desempeñarse de buena forma, además de poder
-              aprender más sobre el desarrollo de software y nuevas tecnologías.
-            </p>
-            <div class="label-contenedor">
-              <a href="https://github.com/CrissSWAT" class="lbl-redes"
-                >Github
-                <img
-                  class="icono-redes"
-                  src="https://w7.pngwing.com/pngs/490/316/png-transparent-computer-icons-github-github-icon-cat-like-mammal-carnivoran-black.png"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/cristofer-gonzalez/"
-                class="lbl-redes"
-                >Linkedin
-                <img
-                  class="icono-redes"
-                  src="https://w7.pngwing.com/pngs/555/1002/png-transparent-computer-icons-linkedin-resume-curriculum-vitae-social-media-social-media-template-text-rectangle.png"
-              /></a>
-
-              <a
-                href="./assets/Cristofer_Gonzalez_CV.pdf"
-                class="lbl-redes"
-                target="_blank">Curriculum
-                <img
-                  class="icono-redes"
-                  src="https://cdn-icons-png.flaticon.com/512/3846/3846805.png"
-              /></a>
+        </div>
+      </div>
+      <section class="sobre-mi" id="sobre-mi">
+        <h3>Sobre mi</h3>
+        <p>
+          Estudiante egresado de Ingeniería en informática de la universidad
+          Tecnológica de Chile INACAP Temuco. Egreso con nota destacada. El
+          proyecto de tesis es un videojuego realizado en Unreal Engine 4, el
+          cual sería una alternativa diferente a los proyectos desarrollados
+          comúnmente, haciendo hincapié en que es una buena oportunidad que no
+          debería desperdiciarse por la alta tasa de crecimiento que se ha
+          tenido.
+        </p>
+        <img src="./assets/signature.png" alt="firma" />
+      </section>
+      <section class="skill-hobbies" id="skill-hobbies">
+        <h3 class="h3-skills">Skills</h3>
+        <div class="skills">
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/1/PNG/256/social_html5_html_71.png" alt="icono" />
+            <h6>Html5</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" alt="icono" />
+            <h6>Javascript</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/php_icon_130857.png" alt="icono" />
+            <h6>PHP</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png" alt="icono" />
+            <h6>Node Js</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
+              alt="icono" />
+            <h6>React</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/512/PNG/512/css3-01_icon-icons.com_50918.png" alt="icono" />
+            <h6>CSS</h6>
+          </div>
+        </div>
+        <h3 class="h3-hobbies">Hobbies</h3>
+        <div class="hobbies">
+          <div class="prop">
+            <img
+              src="https://cdn.icon-icons.com/icons2/1525/PNG/512/976605-appliances-console-controller-dualshock-gamepad-games-videogame_106553.png"
+              alt="icono" />
+            <h6>Videojuegos</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/872/PNG/512/anime-boy-with-tie_icon-icons.com_68057.png"
+              alt="icono" />
+            <h6>Anime</h6>
+          </div>
+          <div class="prop">
+            <img
+              src="https://cdn.icon-icons.com/icons2/1132/PNG/512/1486348532-music-play-pause-control-go-arrow_80458.png"
+              alt="icono" />
+            <h6>Musica</h6>
+          </div>
+          <div class="prop">
+            <img
+              src="https://cdn.icon-icons.com/icons2/3175/PNG/512/eating_placescafe_food_restaurant_drink_icon_193787.png"
+              alt="icono" />
+            <h6>Compartir</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/390/PNG/512/fishing-hook_38318.png" alt="icono" />
+            <h6>Pesca</h6>
+          </div>
+          <div class="prop">
+            <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/23-videos_101207.png" alt="icono" />
+            <h6>Series</h6>
+          </div>
+        </div>
+      </section>
+      <section class="formacion">
+        <h3>Formacion acedemica</h3>
+        <div class="formacion-academica-contenedor">
+          <div class="contenedores-formacion">
+            <div class="formacion-contenedor">
+              <img src="https://portales.inacap.cl/web_resources/themes/portal/img/logoFooter.png" alt="icono" />
+            </div>
+            <div class="formacion-info">
+              <h6>Ingenieria en informatica</h6>
+              <p>2021 - INACAP</p>
+            </div>
+          </div>
+          <div class="contenedores-formacion">
+            <div class="formacion-contenedor">
+              <img
+                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/dibk1ba07iflqhldupuz"
+                alt="icono" />
+            </div>
+            <div class="formacion-info">
+              <h6>Formacion Frontend</h6>
+              <p>2023 - Alura</p>
+            </div>
+          </div>
+          <div class="contenedores-formacion">
+            <div class="formacion-contenedor">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-aws-3215369-2673787.png" alt="icono" />
+            </div>
+            <div class="formacion-info">
+              <h6>Amazon Partitioner</h6>
+              <p>2023 - AWS</p>
             </div>
           </div>
         </div>
-        <section class="sobre-mi" id="sobre-mi">
-          <h3>Sobre mi</h3>
+      </section>
+      <section class="contenedor-proyectos">
+        <h3>Experiencia en proyectos</h3>
+        <div class="proyectos" id="proyectos">
+          <div class="proyectos-contenedor">
+            <div class="proyecto1-img">
+              <img src="./assets/pryecto1.png" alt="imagen" class="img-proyecto" />
+            </div>
+            <div class="proyectos-contenedor2">
+              <div class="proyectos-contenedor-letras">
+                <h6>Login</h6>
+                <p>Frontend Menthor</p>
+              </div>
+              <div class="proyectos-contenedor-botones">
+                <a class="btn-proyectos-repositorio"
+                  href="https://github.com/CrissSWAT/intro-component-with-signup-form-master">Repositorio</a>
+                <a class="btn-proyectos-demo"
+                  href="https://crissswat.github.io/intro-component-with-signup-form-master/">Ver demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos-contenedor proyecto-inverso">
+            <div class="proyecto1-img">
+              <img src="./assets/proyecto2.png" alt="imagen" class="img-proyecto" />
+            </div>
+            <div class="proyectos-contenedor2">
+              <div class="proyectos-contenedor-letras">
+                <h6>Pagina web Tbate</h6>
+                <p>Proyecto Alura</p>
+              </div>
+              <div class="proyectos-contenedor-botones">
+                <a class="btn-proyectos-repositorio" href="https://github.com/CrissSWAT/Pagina-de-tbate">Repositorio</a>
+                <a class="btn-proyectos-demo" href="https://crissswat.github.io/Pagina-de-tbate/">Ver demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos-contenedor">
+            <div class="proyecto1-img">
+              <img src="./assets/proyecto3.png" alt="imagen" class="img-proyecto" />
+            </div>
+            <div class="proyectos-contenedor2">
+              <div class="proyectos-contenedor-letras">
+                <h6>Desafio Frontend</h6>
+                <p>Front Menthor</p>
+              </div>
+              <div class="proyectos-contenedor-botones">
+                <a class="btn-proyectos-repositorio"
+                  href="https://github.com/CrissSWAT/social-proof-section-master">Repositorio</a>
+                <a class="btn-proyectos-demo" href="https://crissswat.github.io/social-proof-section-master/">Ver
+                  demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyectos-contenedor proyecto-inverso">
+            <div class="proyecto1-img">
+              <img src=".//assets/proyecto4.png" alt="imagen" class="img-proyecto" />
+            </div>
+            <div class="proyectos-contenedor2">
+              <div class="proyectos-contenedor-letras">
+                <h6>Desafio Frontend</h6>
+                <p>Front Menthor</p>
+              </div>
+              <div class="proyectos-contenedor-botones">
+                <a class="btn-proyectos-repositorio"
+                  href="https://github.com/CrissSWAT/3-column-preview-card-component-main">Repositorio</a>
+                <a class="btn-proyectos-demo"
+                  href="https://crissswat.github.io/3-column-preview-card-component-main/">Ver demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contenedor-contactos">
+        <img class="imagen-contactos" src="https://cdn-icons-png.flaticon.com/512/5075/5075600.png" alt="imagen" />
+        <div class="contactos" id="contactos">
+          <h2>Contacto</h2>
           <p>
-            Estudiante egresado de Ingeniería en informática de la universidad
-            Tecnológica de Chile INACAP Temuco. Egreso con nota destacada. El
-            proyecto de tesis es un videojuego realizado en Unreal Engine 4, el
-            cual sería una alternativa diferente a los proyectos desarrollados
-            comúnmente, haciendo hincapié en que es una buena oportunidad que no
-            debería desperdiciarse por la alta tasa de crecimiento que se ha
-            tenido.
+            ¿Quiere contactarme? Complete el siguiente formulario y me pondre
+            en contacto con usted.
           </p>
-          <img src="./assets/signature.png" alt="firma" />
-        </section>
-        <section class="skill-hobbies" id="skill-hobbies">
-          <h3 class="h3-skills">Skills</h3>
-          <div class="skills">
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/1/PNG/256/social_html5_html_71.png"
-                alt="icono"
-              />
-              <h6>Html5</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png"
-                alt="icono"
-              />
-              <h6>Javascript</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2108/PNG/512/php_icon_130857.png"
-                alt="icono"
-              />
-              <h6>PHP</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_node_icon_130301.png"
-                alt="icono"
-              />
-              <h6>Node Js</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png"
-                alt="icono"
-              />
-              <h6>React</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/512/PNG/512/css3-01_icon-icons.com_50918.png"
-                alt="icono"
-              />
-              <h6>CSS</h6>
-            </div>
+          <div class="formulario">
+            <form action="#">
+              <div class="contenedor-formulario">
+                <input type="text" class="nombre" placeholder="Nombre" />
+                <input type="email" class="email" placeholder="email@ejemplo.com" />
+                <input type="text" class="asunto" placeholder="Asunto" />
+                <textarea name="" id="" cols="30" rows="10"
+                  placeholder="Explique en breves palabras el motivo de su contacto"></textarea>
+              </div>
+              <input type="submit" class="btn-enviar" value="Enviar mensaje" />
+            </form>
           </div>
-          <h3 class="h3-hobbies">Hobbies</h3>
-          <div class="hobbies">
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/1525/PNG/512/976605-appliances-console-controller-dualshock-gamepad-games-videogame_106553.png"
-                alt="icono"
-              />
-              <h6>Videojuegos</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/872/PNG/512/anime-boy-with-tie_icon-icons.com_68057.png"
-                alt="icono"
-              />
-              <h6>Anime</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/1132/PNG/512/1486348532-music-play-pause-control-go-arrow_80458.png"
-                alt="icono"
-              />
-              <h6>Musica</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/3175/PNG/512/eating_placescafe_food_restaurant_drink_icon_193787.png"
-                alt="icono"
-              />
-              <h6>Compartir</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/390/PNG/512/fishing-hook_38318.png"
-                alt="icono"
-              />
-              <h6>Pesca</h6>
-            </div>
-            <div class="prop">
-              <img
-                src="https://cdn.icon-icons.com/icons2/1471/PNG/512/23-videos_101207.png"
-                alt="icono"
-              />
-              <h6>Series</h6>
-            </div>
-          </div>
-        </section>
-        <section class="formacion">
-          <h3>Formacion acedemica</h3>
-          <div class="formacion-academica-contenedor">
-            <div class="contenedores-formacion">
-              <div class="formacion-contenedor">
-                <img
-                  src="https://portales.inacap.cl/web_resources/themes/portal/img/logoFooter.png"
-                  alt="icono"
-                />
-              </div>
-              <div class="formacion-info">
-                <h6>Ingenieria en informatica</h6>
-                <p>2021 - INACAP</p>
-              </div>
-            </div>
-            <div class="contenedores-formacion">
-              <div class="formacion-contenedor">
-                <img
-                  src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/dibk1ba07iflqhldupuz"
-                  alt="icono"
-                />
-              </div>
-              <div class="formacion-info">
-                <h6>Formacion Frontend</h6>
-                <p>2023 - Alura</p>
-              </div>
-            </div>
-            <div class="contenedores-formacion">
-              <div class="formacion-contenedor">
-                <img
-                  src="https://cdn.iconscout.com/icon/free/png-256/free-aws-3215369-2673787.png"
-                  alt="icono"
-                />
-              </div>
-              <div class="formacion-info">
-                <h6>Amazon Partitioner</h6>
-                <p>2023 - AWS</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="contenedor-proyectos">
-          <h3>Experiencia en proyectos</h3>
-          <div class="proyectos" id="proyectos">
-            <div class="proyectos-contenedor">
-              <div class="proyecto1-img">
-                <img
-                  src="./assets/pryecto1.png"
-                  alt="imagen"
-                  class="img-proyecto"
-                />
-              </div>
-              <div class="proyectos-contenedor2">
-                <div class="proyectos-contenedor-letras">
-                  <h6>Login</h6>
-                  <p>Frontend Menthor</p>
-                </div>
-                <div class="proyectos-contenedor-botones">
-                  <a
-                    class="btn-proyectos-repositorio"
-                    href="https://github.com/CrissSWAT/intro-component-with-signup-form-master"
-                    >Repositorio</a
-                  >
-                  <a
-                    class="btn-proyectos-demo"
-                    href="https://crissswat.github.io/intro-component-with-signup-form-master/"
-                    >Ver demo</a
-                  >
-                </div>
-              </div>
-            </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <h2>Desarrollado por Cristofer Gonzalez &copy; 2023</h2>
+  </footer>
+</body>
 
-            <div class="proyectos-contenedor proyecto-inverso">
-              <div class="proyecto1-img">
-                <img
-                  src="./assets/proyecto2.png"
-                  alt="imagen"
-                  class="img-proyecto"
-                />
-              </div>
-              <div class="proyectos-contenedor2">
-                <div class="proyectos-contenedor-letras">
-                  <h6>Pagina web Tbate</h6>
-                  <p>Proyecto Alura</p>
-                </div>
-                <div class="proyectos-contenedor-botones">
-                  <a
-                    class="btn-proyectos-repositorio"
-                    href="https://github.com/CrissSWAT/Pagina-de-tbate"
-                    >Repositorio</a
-                  >
-                  <a
-                    class="btn-proyectos-demo"
-                    href="https://crissswat.github.io/Pagina-de-tbate/"
-                    >Ver demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="proyectos-contenedor">
-              <div class="proyecto1-img">
-                <img
-                  src="./assets/proyecto3.png"
-                  alt="imagen"
-                  class="img-proyecto"
-                />
-              </div>
-              <div class="proyectos-contenedor2">
-                <div class="proyectos-contenedor-letras">
-                  <h6>Desafio Frontend</h6>
-                  <p>Front Menthor</p>
-                </div>
-                <div class="proyectos-contenedor-botones">
-                  <a
-                    class="btn-proyectos-repositorio"
-                    href="https://github.com/CrissSWAT/social-proof-section-master"
-                    >Repositorio</a
-                  >
-                  <a
-                    class="btn-proyectos-demo"
-                    href="https://crissswat.github.io/social-proof-section-master/"
-                    >Ver demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="proyectos-contenedor proyecto-inverso">
-              <div class="proyecto1-img">
-                <img
-                  src=".//assets/proyecto4.png"
-                  alt="imagen"
-                  class="img-proyecto"
-                />
-              </div>
-              <div class="proyectos-contenedor2">
-                <div class="proyectos-contenedor-letras">
-                  <h6>Desafio Frontend</h6>
-                  <p>Front Menthor</p>
-                </div>
-                <div class="proyectos-contenedor-botones">
-                  <a
-                    class="btn-proyectos-repositorio"
-                    href="https://github.com/CrissSWAT/3-column-preview-card-component-main"
-                    >Repositorio</a
-                  >
-                  <a
-                    class="btn-proyectos-demo"
-                    href="https://crissswat.github.io/3-column-preview-card-component-main/"
-                    >Ver demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="contenedor-contactos">
-          <img
-            class="imagen-contactos"
-            src="https://cdn-icons-png.flaticon.com/512/5075/5075600.png"
-            alt="imagen"
-          />
-          <div class="contactos" id="contactos">
-            <h2>Contacto</h2>
-            <p>
-              ¿Quiere contactarme? Complete el siguiente formulario y me pondre
-              en contacto con usted.
-            </p>
-            <div class="formulario">
-              <form action="#">
-                <div class="contenedor-formulario">
-                  <input type="text" class="nombre" placeholder="Nombre" />
-                  <input
-                    type="email"
-                    class="email"
-                    placeholder="email@ejemplo.com"
-                  />
-                  <input type="text" class="asunto" placeholder="Asunto" />
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    placeholder="Explique en breves palabras el motivo de su contacto"
-                  ></textarea>
-                </div>
-                <input
-                  type="submit"
-                  class="btn-enviar"
-                  value="Enviar mensaje"
-                />
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <h2>Desarrollado por Cristofer Gonzalez &copy; 2023</h2>
-    </footer>
-  </body>
 </html>
